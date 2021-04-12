@@ -144,79 +144,43 @@
 
 
                             <div class="form-label-group">
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autocomplete="email">
                                 <label for="inputEmail">Email address</label>
-
-                                    @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
                             </div>
 
 
 
                             <div class="form-label-group">
-                                <input type="text" id="inputAdress" class="form-control" placeholder="adress" required id="adress" type="text" class="form-control @error('adress') is-invalid @enderror" name="adress" value="{{ old('adress') }}" required autocomplete="adress">
+                                <input type="text" id="inputAdress" class="form-control" placeholder="adress" required id="adress" type="text" class="form-control" name="adress" value="{{ old('adress') }}" required autocomplete="adress">
                                 <label for="inputAdress">Adres</label>
-
-                                    @error('adress')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
                             </div>
 
 
 
 
                             <div class="form-label-group">
-                                <input type="text" id="inputZip_code" class="form-control" placeholder="zip_code" required autofocus id="text" id="inputZip_code" class="form-control" placeholder="zip_code" required id="zip_code" type="text" class="form-control @error('zip_code') is-invalid @enderror" name="zip_code" value="{{ old('zip_code') }}" required autocomplete="zip_code">
+                                <input type="text" id="inputZip_code" class="form-control" placeholder="zip_code" required autofocus id="text" id="inputZip_code" class="form-control" placeholder="zip_code" required id="zip_code" type="text" class="form-control" name="zip_code" value="{{ old('zip_code') }}" required autocomplete="zip_code">
                                 <label for="inputZip_code">Postcode</label>
-
-                                    @error('zip_code')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
                                 </div>
 
 
 
 
                             <div class="form-label-group">
-                                <input type="text" id="inputCity" class="form-control" placeholder="city" required autofocus id="text" id="inputCity" class="form-control" placeholder="city" required id="city" type="text" class="form-control @error('city') is-invalid @enderror" name="city" value="{{ old('city') }}" required autocomplete="city">
+                                <input type="text" id="inputCity" class="form-control" placeholder="city" required autofocus id="text" id="inputCity" class="form-control" placeholder="city" required id="city" type="text" class="form-control" name="city" value="{{ old('city') }}" required autocomplete="city">
                                 <label for="inputCity">Woonplaats</label>
-
-                                    @error('city')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
                                 </div>
 
 
                             <div class="form-label-group">
-                                <input type="text" id="inputPhone_number" class="form-control" placeholder="phone_number" required autofocus id="text" id="inputPhone_number" class="form-control" placeholder="phone_number" required id="phone_number" type="text" class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ old('phone_number') }}" required autocomplete="phone_number">
+                                <input type="text" id="inputPhone_number" class="form-control" placeholder="phone_number" required autofocus id="text" id="inputPhone_number" class="form-control" placeholder="phone_number" required id="phone_number" type="text" class="form-control" name="phone_number" value="{{ old('phone_number') }}" required autocomplete="phone_number">
                                 <label for="inputPhone_number">Telefoonnummer</label>
-
-                                    @error('phone_number')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
                                 </div>
 
 
 
                             <div class="form-label-group">
-                                    <input id="birth" type="date" class="form-control @error('birth') is-invalid @enderror" name="birth" value="{{ old('birth') }}" required autocomplete="birth">
-
-                                    @error('birth')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
+                                    <input id="birth" type="date" class="form-control" name="birth" value="{{ old('birth') }}" required autocomplete="birth">
                                 </div>
 
 
@@ -225,13 +189,7 @@
                                 <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Wachtwoord') }}</label>
 
                                 <div class="col-md-6">
-                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                    @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
+                                    <input id="password" type="password" class="form-control" name="password" required autocomplete="new-password">
                                 </div>
                             </div>
 
@@ -255,5 +213,6 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 @endsection

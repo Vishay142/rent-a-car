@@ -19,7 +19,7 @@ class CreateCarsTable extends Migration
             $table->string('merk');
             $table->string('type');
             $table->string('price');
-            $table->string('image');
+            $table->mediumText('url')->nullable();
             $table->timestamps();
         });
     }

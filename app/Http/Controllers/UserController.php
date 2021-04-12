@@ -82,10 +82,10 @@ class UserController extends Controller
         if ($user) {
             $validate = $request->validate([
                 'first_name' => 'min:2',
-                'last_name' => 'min:2',
+                'last_name' => 'min:2', 
                 'email' => 'max:255',
                 'adress' => 'max:255',
-                'zip_code' => 'max:6',
+                'zip_code' => 'max:10',
                 'city' => 'max:55',
                 'phone_number' => 'max:10',
 //                'birth' => 'date'
