@@ -45,10 +45,10 @@ return [
 
         's3' => [
             'driver' => 's3',
-            'key' => 'AKIAYQTPT764ACO6ZJNK',
-            'secret' => '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',
-            'region' => 'us-east-2',
-            'bucket' => 'rentacar-project',
+            'key' => 'AKIAYQTPT764JPBSTYDE',
+            'secret' => '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',
+            'region' => 'eu-west-2',
+            'bucket' => 'rentacar-images',
             'url' => env('AWS_URL'),
             'visibility' => 'public',
             'endpoint' => env('AWS_ENDPOINT'),
