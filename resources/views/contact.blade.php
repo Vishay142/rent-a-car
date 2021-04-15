@@ -63,7 +63,6 @@
                         <p>Almere, Nederland</p>
                         <p>info@rentacar.nl</p>
                         <p>+31 6 17845562</p>
-s
                     </div>
 
                 </div>

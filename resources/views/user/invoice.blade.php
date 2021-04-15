@@ -1,6 +1,29 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container">
+
+    <style>
+        .container1{
+            padding: 60px;
+        }
+        .card {
+            border-radius: 18px;
+            background: white;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+            margin: 9px;
+
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+        }
+        .card {
+            transition: 0.5s ease;
+            cursor: pointer;
+        }
+
+    </style>
+
+    <div class="container1">
         <div class="row justify-content-center">
             <div class="col-md-14">
                 <div class="card">
@@ -9,7 +32,7 @@
                         <thead>
                         <tr>
                             <th scope="col">Voornaam</th>
-                            <th scope="col">Lastname</th>
+                            <th scope="col">Achternaame</th>
                             <th scope="col">Adres</th>
                             <th scope="col">Postcode</th>
                             <th scope="col">Plaats</th>
@@ -17,7 +40,7 @@
                             <th scope="col">Kenteken</th>
                             <th scope="col">Merk</th>
                             <th scope="col">Type</th>
-                            <th scope="col">Gereserveerd</th>
+                            <th scope="col">Gereserveerde periode</th>
                             <th scope="col">Aantal dagen</th>
                             <th scope="col">Prijs per dag</th>
                             <th scope="col">Totale Prijs Exc. BTW</th>
