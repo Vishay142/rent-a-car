@@ -82,7 +82,7 @@ class UserController extends Controller
         if ($user) {
             $validate = $request->validate([
                 'first_name' => 'min:2',
-                'last_name' => 'min:2', 
+                'last_name' => 'min:2',
                 'email' => 'max:255',
                 'adress' => 'max:255',
                 'zip_code' => 'max:10',
@@ -93,17 +93,13 @@ class UserController extends Controller
         }
 
         if($user) {
-            $user->name = $request['first_name'];
-            $user->name = $request['last_name'];
+            $user->first_name = $request['first_name'];
+            $user->last_name = $request['last_name'];
             $user->email = $request['email'];
             $user->adress = $request['adress'];
             $user->zip_code = $request['zip_code'];
             $user->city = $request['city'];
             $user->phone_number = $request['phone_number'];
-//            $user->date = $request['date'];
-
-
-//            dd($user);
            $user->save();
 
             return redirect()->back();
