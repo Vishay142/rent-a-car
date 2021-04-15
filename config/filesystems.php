@@ -1,3 +1,4 @@
+
 <?php
 
 return [
@@ -44,14 +45,13 @@ return [
 
         's3' => [
             'driver' => 's3',
-            'key' => env('AWS_ACCESS_KEY_ID'),
-            'secret' => env('AWS_SECRET_ACCESS_KEY'),
-            'region' => env('AWS_DEFAULT_REGION'),
-            'bucket' => env('AWS_BUCKET'),
+            'key' => 'AKIAYQTPT764ACO6ZJNK',
+            'secret' => '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',
+            'region' => 'us-east-2',
+            'bucket' => 'rentacar-project',
             'url' => env('AWS_URL'),
+            'visibility' => 'public',
             'endpoint' => env('AWS_ENDPOINT'),
-            'visibility' => 'public'
-
         ],
 
     ],
